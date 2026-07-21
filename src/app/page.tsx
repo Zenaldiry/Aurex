@@ -8,7 +8,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 
 import Hero from '@/components/Hero';
-
+import WhyChooseUs from '@/components/WhyChooseUs'; // <-- IMPORT ADDED HERE
+import ContactSection from '@/components/ContactSection';
+import FAQSection from '@/components/FAQSection';
+import CoreServices from '@/components/CoreServices';
+import MarketsAndWorkflow from '@/components/MarketsAndWorkflow';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function HomePage() {
@@ -61,7 +65,19 @@ export default function HomePage() {
     <main ref={container} className='bg-slate-50 min-h-screen'>
       <Hero />
 
-      <section className='py-24 px-6 max-w-7xl mx-auto'>
+      {/* ADDED COMPONENT HERE */}
+
+      <CoreServices />
+      <WhyChooseUs />
+      <MarketsAndWorkflow />
+      <ContactSection />
+      <FAQSection />
+    </main>
+  );
+}
+
+{
+  /* <section className='py-24 px-6 max-w-7xl mx-auto'>
         <div className='text-center mb-16'>
           <h2 className='text-3xl md:text-4xl font-light text-slate-900 uppercase tracking-widest mb-4'>
             Our Expertise
@@ -97,7 +113,5 @@ export default function HomePage() {
             </Link>
           ))}
         </div>
-      </section>
-    </main>
-  );
+      </section> */
 }
