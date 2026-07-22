@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
@@ -107,27 +108,28 @@ export default function Navbar() {
     <>
       <header className='absolute top-0 left-0 w-full z-40 flex h-16 md:h-22'>
         {/* LEFT: White Logo Block with subtle shadow */}
-        <div className='w-36 md:w-72 h-full bg-[#001c33]/70 flex items-center justify-center z-40 relative shadow-[4px_0_24px_rgba(0,0,0,0.03)]'>
+        <div className='w-36 md:w-72 h-full bg-[#001c33]/0 flex items-center justify-center z-40 relative shadow-[4px_0_24px_rgba(0,0,0,0.03)]'>
           <Link
             href='/'
             className='flex flex-col items-center group'
             onClick={() => isOpen && toggleMenu()}
           >
-            {/* Logo Text with Gold Color from Image 0 */}
-            <span className='text-2xl md:text-4xl font-light tracking-[0.25em] text-[#C4A77D] uppercase leading-none group-hover:text-slate-900 transition-colors duration-300'>
-              AUR<span className='text-slate-900 font-semibold'>E</span>X
-            </span>
-            {/* Sub-text from Image 0 */}
-            <span className='text-[0.5rem] md:text-[0.6em] tracking-[0.4em] text-slate-400 uppercase mt-1.5 font-medium'>
-              Integrated
-            </span>
+            {/* Logo Image - replace src with your logo path (e.g. /logo.png in public/) */}
+            <Image
+              src='/images/logor.png'
+              alt='Aurex Integrated'
+              width={160}
+              height={48}
+              priority
+              className='h-10 w-30 md:h-12 md:w-auto object-contain'
+            />
           </Link>
         </div>
 
         {/* MIDDLE: Split Navigation, More Transparent Lighter Blue */}
         <div className='flex-1 flex flex-col h-full relative z-40'>
           {/* Top Utility Bar: Lighter, Transparent Blue, White Text */}
-          <div className='hidden md:flex w-full h-10 bg-sky-200/40 items-center justify-end px-8 gap-8 text-[0.65rem] font-medium tracking-[0.2em] text-white uppercase'>
+          <div className='hidden md:flex w-full h-10 bg-sky-200/0 items-center justify-end px-8 gap-8 text-[0.65rem] font-medium tracking-[0.2em] text-white uppercase'>
             <a
               href='mailto:info@aurex.com'
               className='hover:text-[#C4A77D] transition-colors duration-300'
@@ -149,7 +151,7 @@ export default function Navbar() {
           </div>
 
           {/* Bottom Main Nav: Dark Blue Background from Image 0, Gold Accents */}
-          <div className='flex-1 w-full bg-[#001c33]/70 flex items-center justify-between px-6 md:px-10'>
+          <div className='flex-1 w-full bg-[#001c33]/0 flex items-center justify-between px-6 md:px-10'>
             <nav className='hidden md:flex items-center gap-8'>
               {links.slice(1, 4).map((link) => (
                 <Link
@@ -190,15 +192,15 @@ export default function Navbar() {
         <div className='w-20 md:w-28 h-full shrink-0 bg-transparent'></div>
       </header>
 
-      {/* FIXED BURGER / CLOSE BUTTON - Same Lighter Blue Hover/Accent */}
+      {/* FIXED BURGER / CLOSE BUTTON */}
       <button
         onClick={toggleMenu}
         aria-label={isOpen ? 'Close menu' : 'Open menu'}
-        className={`fixed right-0 top-0 z-50 flex flex-col items-center justify-center bg-white text-slate-900 transition-all duration-500 ease-in-out hover:text-[#C4A77D]
+        className={`fixed right-0 top-0 z-50 flex flex-col items-center justify-center transition-all duration-500 ease-in-out hover:text-[#C4A77D]
           ${
             isScrolled
-              ? 'h-15 w-16 md:h-20 md:w-20 shadow-[0_8px_30px_rgba(0,0,0,0.08)]'
-              : 'h-16 w-20 md:h-22 md:w-28 shadow-none'
+              ? 'bg-white text-slate-900 h-16 w-16 md:h-20 md:w-20 shadow-[0_8px_30px_rgba(0,0,0,0.08)]'
+              : 'bg-transparent text-[#fbd739] h-16 w-20 md:h-22 md:w-28 shadow-none'
           }
         `}
       >
@@ -308,4 +310,4 @@ export default function Navbar() {
     </>
   );
 }
-//44
+//45

@@ -17,8 +17,7 @@ const services = [
     description:
       'Clear pricing structures developed for materials, labor, subcontractors, delivery, and project management to protect your profit margin.',
     link: '/services#pricing',
-    image:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop',
+    image: '/images/services/image2.png',
   },
   {
     id: '02',
@@ -239,12 +238,12 @@ export default function CoreServices() {
               />
 
               {/* Dark Gradient Overlays */}
-              <div className='absolute inset-0 bg-gradient-to-r from-[#0B1118]/20 via-[#0B1118]/20 to-transparent md:w-[75%]' />
-              <div className='absolute inset-0 bg-[#0B1118]/65' />
+              <div className='absolute inset-0 bg-gradient-to-r from-[#0B1118]/0 via-[#0B1118]/0 to-transparent md:w-[75%]' />
+              <div className='absolute inset-0 bg-[#0B1118]/35' />
 
               {/* Category & ID Tag — pinned to top, fully independent of bottom block */}
               <div className='absolute top-0 left-0 right-0 p-6 sm:p-8 md:p-12 z-10 flex items-center justify-between border-b border-slate-700/50 pb-3 md:border-none md:pb-0'>
-                <span className='text-xs md:text-sm font-semibold tracking-[0.25em] text-[#7DB8E8] uppercase'>
+                <span className='text-xs md:text-sm font-semibold tracking-[0.25em] text-[#f1cd3e] uppercase'>
                   {service.category}
                 </span>
                 <span className='text-slate-400 font-mono text-sm md:text-base font-semibold'>

@@ -166,7 +166,7 @@ export default function WhyChooseUs() {
         ></div>
 
         {/* Dark Vignette Overlay */}
-        <div className='absolute inset-0 bg-slate-950/80'></div>
+        <div className='absolute inset-0 bg-slate-950/60'></div>
       </div>
 
       <div className='relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-0 h-full md:py-24'>
@@ -209,7 +209,7 @@ export default function WhyChooseUs() {
             <div className='left-reveal mt-2 md:mt-4'>
               <Link
                 href='/about'
-                className='inline-block bg-[#7DB8E8] text-slate-900 px-6 py-3 md:px-8 text-xs font-bold tracking-widest uppercase hover:bg-white transition-colors'
+                className='inline-block bg-[#f1cd3e] text-slate-900 px-6 py-3 md:px-8 text-xs font-bold tracking-widest uppercase hover:bg-white transition-colors'
               >
                 About Us →
               </Link>
@@ -221,7 +221,7 @@ export default function WhyChooseUs() {
         <div className='md:pl-16 relative w-full h-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-0'>
           {/* Item 1 */}
           <div className='right-item relative md:absolute left-0 md:left-16 right-0 flex gap-4 md:gap-8 bg-slate-900/40 md:bg-transparent p-6 md:p-0 rounded-xl md:rounded-none border border-slate-800/40 md:border-none backdrop-blur-sm md:backdrop-blur-none'>
-            <div className='w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#7DB8E8] flex-shrink-0 mt-1'></div>
+            <div className='w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#f1cd3e] flex-shrink-0 mt-1'></div>
             <div>
               <h3 className='text-lg md:text-2xl font-bold text-white mb-2 md:mb-4'>
                 Turnkey Integration
@@ -237,7 +237,7 @@ export default function WhyChooseUs() {
 
           {/* Item 2 */}
           <div className='right-item relative md:absolute left-0 md:left-16 right-0 flex gap-4 md:gap-8 bg-slate-900/40 md:bg-transparent p-6 md:p-0 rounded-xl md:rounded-none border border-slate-800/40 md:border-none backdrop-blur-sm md:backdrop-blur-none'>
-            <div className='w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#7DB8E8] flex-shrink-0 mt-1'></div>
+            <div className='w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#f1cd3e] flex-shrink-0 mt-1'></div>
             <div>
               <h3 className='text-lg md:text-2xl font-bold text-white mb-2 md:mb-4'>
                 Tailored for the Trade
@@ -253,7 +253,7 @@ export default function WhyChooseUs() {
 
           {/* Item 3 */}
           <div className='right-item relative md:absolute left-0 md:left-16 right-0 flex gap-4 md:gap-8 bg-slate-900/40 md:bg-transparent p-6 md:p-0 rounded-xl md:rounded-none border border-slate-800/40 md:border-none backdrop-blur-sm md:backdrop-blur-none'>
-            <div className='w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#7DB8E8] flex-shrink-0 mt-1'></div>
+            <div className='w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#f1cd3e] flex-shrink-0 mt-1'></div>
             <div>
               <h3 className='text-lg md:text-2xl font-bold text-white mb-2 md:mb-4'>
                 Uncompromising Quality

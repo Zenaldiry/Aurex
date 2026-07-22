@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
 
-import Hero from '@/components/Hero';
+import Hero from '@/components/Hero2';
 import WhyChooseUs from '@/components/WhyChooseUs'; // <-- IMPORT ADDED HERE
 import ContactSection from '@/components/ContactSection';
 import FAQSection from '@/components/FAQSection';
